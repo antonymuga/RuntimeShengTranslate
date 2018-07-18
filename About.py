@@ -1,0 +1,65 @@
+#	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#	*        RUNTIME SHENG TRANSLATOR - ENGLISH TRACK        *
+#	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#	*  Welcome to Runtime Sheng translator. v1.0.0           *
+#	*  MIT License, Copyright(c) 2018, Antony Muga           *
+#	*  All Rights Reserved.                                  *
+#	*  Author: Antony Muga                                   *
+#	----------------------------------------------------------
+#	*  Project's Links:                                      *
+#	*  Twitter: https://twitter.com/RuntimeClubKe            *
+#	*  Runtime Club on LinkedIn                              *
+#	*  Runtime Club on Github                                *
+#	*  RuntimeTranslate project on GitHub                    *
+#	----------------------------------------------------------
+#	*  Personal social links:                                *
+#	*  GitHub: https://github.com/antonymuga/                *
+#	*  Website: https://antonymuga.github.io                 *
+#	*  LinkedIn: https://www.linkedin.com/in/antony-muga/    *
+#	*  Email: https://sites.google.com/view/antonymuga/home  *
+#	----------------------------------------------------------
+
+projectDetails = """
+		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		*                RUNTIME SHENG TRANSLATOR                *
+		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		*  Welcome to Runtime Sheng translator. v1.0.0           *
+		*  MIT License, Copyright(c) 2018, Antony Muga           *
+		*  All Rights Reserved.                                  *
+		*  Author: Antony Muga                                   *
+		----------------------------------------------------------
+		*  Project's Links:                                      *
+		*  TWITTER: https://twitter.com/RuntimeClubKe            *
+		*  LINKEDIN: Runtime Club                                *
+		*  GITHUB: RuntimeClubKe organization                    *
+		*  GITHUB: Fork RuntimeTranslate project                 *
+		----------------------------------------------------------
+		*  AUTHOR: ANTONY MUGA 					 *
+		*  Personal social links:                                *
+		*  GITHUB: https://github.com/antonymuga/                *
+		*  WEBSITE: https://antonymuga.github.io                 *
+		*  LINKEDIN: https://www.linkedin.com/in/antony-muga/    *
+		*  CONTACT: https://sites.google.com/view/antonymuga/home*
+		----------------------------------------------------------
+		"""
+
+signOff = """
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	THANK YOU FOR USING RUNTIME TRANSLATE v1.0.0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	TWITTER: RuntimeClubKe
+	LINKEDIN: Runtime Club
+-----------------------------------------------------------
+	GITHUB: RuntimeClubKe organization
+	FORK ON GITHUB & CONTRIBUTE: RuntimeTranslate
+-----------------------------------------------------------
+	AUTHOR: Antony Muga
+	GITHUB: https://github.com/antonymuga/ 
+	LINKEDIN: https://www.linkedin.com/in/antony-muga/
+	WEBSITE: https://antonymuga.github.io
+	EMAIL: https://sites.google.com/view/antonymuga/home
+-----------------------------------------------------------
+	Copyright(c) 2018, Antony Muga
+	https://antonymuga.github.io/
+-----------------------------------------------------------
+"""
