@@ -18,7 +18,7 @@
 #	*  LinkedIn: https://www.linkedin.com/in/antony-muga/    *
 #	*  Email: https://sites.google.com/view/antonymuga/home  *
 #	----------------------------------------------------------
-
+# 
 projectDetails = """
 		++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		*                RUNTIME SHENG TRANSLATOR                *
