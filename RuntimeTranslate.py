@@ -19,6 +19,9 @@
 #	*  Email: https://sites.google.com/view/antonymuga/home  *
 #	----------------------------------------------------------
 
+
+# The below 'import sys' is currently vestigial now but will come in handy while writing new submission
+# into the individual dictionary files, open, write, close and all that Jazz
 import sys
 
 # Import the project details
