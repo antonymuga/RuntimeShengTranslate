@@ -1,2 +1,5 @@
 # RuntimeTranslate
-The master repository for the @RuntimeClubKe Sheng Translator project.
+- This project is all about having fun and also bringing Sheng into the digital age.
+- There's four developer tracks according to the respective languages.
+- Python programming language has been chosen for this project.
+- Follow [@RuntimeLab]("https://twitter.com/RuntimeLab") for more updates.
