@@ -122,7 +122,10 @@ def RuntimeTranslate():
 
 
 	# testing for empty inputs, loop forever till the user actually enters meaningful input
-	while (len(shengWord) == 0) or (shengWord == "") or (shengWord == " ") or (shengWord.isspace())== True:
+	while (len(shengWord) == 0) or (shengWord == "") or (shengWord == " ") or (shengWord.isspace()) == True:
+
+		# TODO: Instead of comming up with an print() error, why now raise an exception instead
+
 		print("\n\t Invalid input.Please enter a word to proceed! \n ")
 		print("\n","*"*75, "\n")
 		shengWord = str(input("\n\t PLEASE ENTER A SHENG WORD TO TRANSLATE.\n\n\t Your word: "))
