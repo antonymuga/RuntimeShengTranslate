@@ -117,7 +117,10 @@ def RuntimeTranslate():
 
 	Your word: """))
 
-	
+	# TO DO
+	# Write new logic to test for empty input, the one below is whack
+
+
 	# testing for empty inputs, loop forever till the user actually enters meaningful input
 	while (len(shengWord) == 0) or (shengWord == "") or (shengWord == " ") or (shengWord.isspace())== True:
 		print("\n\t Invalid input.Please enter a word to proceed! \n ")
