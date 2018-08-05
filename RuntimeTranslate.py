@@ -104,7 +104,7 @@ def RuntimeTranslate():
 
 	# Call the chosen language
 	chosenLanguage()
-	# Declaration of the Sheng to english dictionary
+	# Declaration dictionary that will store unavailable world for later translation
 	submissions = []
 
 	# Enter the search string, only one word is supported for now
