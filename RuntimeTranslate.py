@@ -7,9 +7,9 @@
 #	*  Author: Antony Muga                                   *
 #	----------------------------------------------------------
 #	*  Project's Links:                                      *
-#	*  Twitter: https://twitter.com/RuntimeClubKe            *
-#	*  Runtime Club on LinkedIn                              *
-#	*  Runtime Club on Github                                *
+#	*  Twitter: https://twitter.com/RuntimeLab               *
+#	*  Runtime Lab on LinkedIn                               *
+#	*  RuntimeLab on Github                                  *
 #	*  RuntimeTranslate project on GitHub                    *
 #	----------------------------------------------------------
 #	*  Personal social links:                                *
@@ -19,6 +19,9 @@
 #	*  Email: https://sites.google.com/view/antonymuga/home  *
 #	----------------------------------------------------------
 
+
+# The below 'import sys' is currently vestigial now but will come in handy while writing new submission
+# into the individual dictionary files, open, write, close and all that Jazz
 import sys
 
 # Import the project details
@@ -37,7 +40,7 @@ print("\n","*"*75, "\n")
 # Print the project details
 print(About.projectDetails)
 
-# Print line separator for diffrent sections
+# Print line separator for different sections
 print("\n","*"*75, "\n")
 
 
@@ -102,13 +105,13 @@ def RuntimeTranslate():
 	# Call the chosen dictionary
 	chosenDictionary()
 
-	# Call the shosen language
+	# Call the chosen language
 	chosenLanguage()
-	# Declaration of the Sheng to english dictionary
+	# Declaration dictionary that will store unavailable world for later translation
 	submissions = []
 
 	# Enter the search string, only one word is supported for now
-	searchItem = str(input("""
+	shengWord = str(input("""
 	NOTE: Currently, only single words are supported.
 	More features will be added in through course of 
 	development.
@@ -117,12 +120,18 @@ def RuntimeTranslate():
 
 	Your word: """))
 
-	
-	# testing for empty inputs, loop forever till the user actually enter meaningful output
-	while (len(searchItem) == 0) or (searchItem == "") or (searchItem == " ") or (searchItem.isspace())== True:
+	# TO DO
+	# Write new logic to test for empty input, the one below is whack
+
+
+	# testing for empty inputs, loop forever till the user actually enters meaningful input
+	while (len(shengWord) == 0) or (shengWord == "") or (shengWord == " ") or (shengWord.isspace()) == True:
+
+		# TODO: Instead of comming up with an print() error, why now raise an exception instead
+
 		print("\n\t Invalid input.Please enter a word to proceed! \n ")
 		print("\n","*"*75, "\n")
-		searchItem = str(input("\n\t PLEASE ENTER A SHENG WORD TO TRANSLATE.\n\n\t Your word: "))
+		shengWord = str(input("\n\t PLEASE ENTER A SHENG WORD TO TRANSLATE.\n\n\t Your word: "))
 
 
 	# If the input is not empty or a space
@@ -132,22 +141,22 @@ def RuntimeTranslate():
 		currentLang = chosenLanguage()
 
 		# CASE 1: Test to see whether the input is in Title case, if not, convert it to title case
-		if searchItem.istitle() == False:
+		if shengWord.istitle() == False:
 
 			# Convert the input from the keyboard into title case
-			searchItem = searchItem.title()
+			shengWord = shengWord.title()
 
 			# Check if the word exists in the dictionary keys
-			if (searchItem in chosenDictionary().keys()) == True:
+			if (shengWord in chosenDictionary().keys()) == True:
 				print("\n","*"*75, "\n")
 				print("\n\t LANGUAGE: {}\n".format(currentLang))
-				# Output the translation string, if you write python code the line below should be self explanatory
-				print("\n\t THE TRANSLATION IS AS FOLLOWS: \n\n\t SHENG         {} \n\n\t '{}' --> '{}'".format(currentLang, searchItem, chosenDictionary()[searchItem]))
+				# Output the translation string, if you do actually write python code, the line below should be self explanatory
+				print("\n\t THE TRANSLATION IS AS FOLLOWS: \n\n\t SHENG         {} \n\n\t '{}' --> '{}'".format(currentLang, shengWord, chosenDictionary()[shengWord]))
 
 				# Print line separator
 				print("\n","*"*75, "\n")
 
-				# Offer option to translate the same word in the same language
+				# Offer option to translate the another Sheng word in the same language
 				translateAnother = int(input("\n\t TRANSLATE ANOTHER SHENG WORD TO {}? \n\t \n\t 1: Yes \n\n\t 2: No \n\n\t Select: ".format(currentLang)))
 
 				# If user selects yes, run the core logic again
@@ -161,22 +170,22 @@ def RuntimeTranslate():
 				# Exit for invalid inputs
 				else:
 					exit()
-			# If the word does not exist in the chosen dictionary, print the message of no availability
-			elif (searchItem in chosenDictionary().keys()) == False:
+			# If the Sheng word does not exist in the chosen dictionary, print the message of no availability
+			elif (shengWord in chosenDictionary().keys()) == False:
 				print("\n\t LANGUAGE: {}\n".format(currentLang))
-				print("\n\t SORRY, NO MATCH WAS FOUND FOR '{}'.".format(searchItem))
+				print("\n\t SORRY, NO MATCH WAS FOUND FOR '{}'.".format(shengWord))
 
 				# Append the new word to the submissions list
 				submissions = []
-				submissions.append(searchItem)
+				submissions.append(shengWord)
 
 				# Print line separator
 				print("\n","*"*75, "\n")
 
-				# Offer user the option to translate another word in the same language
+				# Offer user the option to translate another Sheng word in the same language
 				translateAnother = int(input("\n\t TRANSLATE ANOTHER SHENG WORD TO {}? \n\t \n\t 1: Yes \n\n\t 2: No \n\n\t Select: ".format(currentLang)))
 
-				# If the user selscts yes, run core logic again
+				# If the user selects yes, run core logic again
 				if translateAnother == 1:
 					RuntimeTranslate()
 				# If the user selects no, print the sign off message and exit app
@@ -186,13 +195,13 @@ def RuntimeTranslate():
 				else:
 					exit()
 
-		# CASE 2: Run this logic if the the user inputs a word that is already in title case
-		# The code below is self explanatory if you actually do write python code
-		elif searchItem.istitle() == True:
-			if (searchItem in chosenDictionary().keys()) == True:
+		# CASE 2: Run this logic if the the user inputs a Sheng word that is already in title case
+		# The code below is self explanatory if you actually do actually write python code
+		elif shengWord.istitle() == True:
+			if (shengWord in chosenDictionary().keys()) == True:
 				print("\n","*"*75, "\n")
 				print("\n\t LANGUAGE: {}\n".format(currentLang))
-				print("\n\t THE TRANSLATION IS AS FOLLOWS: \n\n\t SHENG         {} \n\n\t '{}' --> '{}'".format(currentLang, searchItem, chosenDictionary()[searchItem]))
+				print("\n\t THE TRANSLATION IS AS FOLLOWS: \n\n\t SHENG         {} \n\n\t '{}' --> '{}'".format(currentLang, shengWord, chosenDictionary()[shengWord]))
 				print("\n","*"*75, "\n")
 				translateAnother = int(input("\n\t TRANSLATE ANOTHER SHENG WORD TO {}? \n\t \n\t 1: Yes \n\n\t 2: No \n\n\t Select: ".format(currentLang)))
 				if translateAnother == 1:
@@ -202,9 +211,9 @@ def RuntimeTranslate():
 					exit()
 				else:
 					exit()
-			elif (searchItem in chosenDictionary().keys()) == False:
+			elif (shengWord in chosenDictionary().keys()) == False:
 				print("\n\t CHOSEN LANGUAGE: {}\n".format(currentLang))
-				print("\n\t SORRY, NO MATCH WAS FOUND FOR'{}'.".format(searchItem))
+				print("\n\t SORRY, NO MATCH WAS FOUND FOR'{}'.".format(shengWord))
 				submissions = []
 				submissions.append()
 				print("\n","*"*75, "\n")

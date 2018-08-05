@@ -29,12 +29,12 @@ projectDetails = """
 		*  Author: Antony Muga                                   *
 		----------------------------------------------------------
 		*  Project's Links:                                      *
-		*  TWITTER: https://twitter.com/RuntimeClubKe            *
-		*  LINKEDIN: Runtime Club                                *
-		*  GITHUB: RuntimeClubKe organization                    *
+		*  TWITTER: https://twitter.com/RuntimeLab               *
+		*  LINKEDIN: Runtime Lab                                 *
+		*  GITHUB: RuntimeLab    organization                    *
 		*  GITHUB: Fork RuntimeTranslate project                 *
 		----------------------------------------------------------
-		*  AUTHOR: ANTONY MUGA 					 *
+		*  AUTHOR: ANTONY MUGA 			                 *
 		*  Personal social links:                                *
 		*  GITHUB: https://github.com/antonymuga/                *
 		*  WEBSITE: https://antonymuga.github.io                 *
@@ -47,10 +47,10 @@ signOff = """
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	THANK YOU FOR USING RUNTIME TRANSLATE v1.0.0
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	TWITTER: RuntimeClubKe
-	LINKEDIN: Runtime Club
+	TWITTER: RuntimeLab
+	LINKEDIN: Runtime Lab
 -----------------------------------------------------------
-	GITHUB: RuntimeClubKe organization
+	GITHUB: RuntimeLab organization
 	FORK ON GITHUB & CONTRIBUTE: RuntimeTranslate
 -----------------------------------------------------------
 	AUTHOR: Antony Muga
