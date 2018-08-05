@@ -8,8 +8,8 @@
 #	----------------------------------------------------------
 #	*  Project's Links:                                      *
 #	*  Twitter: https://twitter.com/RuntimeLab               *
-#	*  Runtime Lab  on LinkedIn                              *
-#	*  RuntimeLab   on Github                                *
+#	*  Runtime Lab on LinkedIn                               *
+#	*  RuntimeLab on Github                                  *
 #	*  RuntimeTranslate project on GitHub                    *
 #	----------------------------------------------------------
 #	*  Personal social links:                                *
@@ -102,13 +102,9 @@ def RuntimeTranslate():
 	# Call the chosen dictionary
 	chosenDictionary()
 
-<<<<<<< HEAD
 	# Call the chosen language
-=======
-	# Call the chosen language / useful for the output string
->>>>>>> 07caa673c055568b389ff8315c47674fa2816c5b
 	chosenLanguage()
-	# Declaration of the Sheng to english dictionary for submissions of word that currently don't exist
+	# Declaration of the Sheng to english dictionary
 	submissions = []
 
 	# Enter the search string, only one word is supported for now
