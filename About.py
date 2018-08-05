@@ -34,7 +34,7 @@ projectDetails = """
 		*  GITHUB: RuntimeLab    organization                    *
 		*  GITHUB: Fork RuntimeTranslate project                 *
 		----------------------------------------------------------
-		*  AUTHOR: ANTONY MUGA 					 *
+		*  AUTHOR: ANTONY MUGA 					                 *
 		*  Personal social links:                                *
 		*  GITHUB: https://github.com/antonymuga/                *
 		*  WEBSITE: https://antonymuga.github.io                 *
