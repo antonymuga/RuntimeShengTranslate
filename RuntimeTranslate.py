@@ -7,9 +7,9 @@
 #	*  Author: Antony Muga                                   *
 #	----------------------------------------------------------
 #	*  Project's Links:                                      *
-#	*  Twitter: https://twitter.com/RuntimeClubKe            *
-#	*  Runtime Club on LinkedIn                              *
-#	*  Runtime Club on Github                                *
+#	*  Twitter: https://twitter.com/RuntimeLab               *
+#	*  Runtime Lab  on LinkedIn                              *
+#	*  RuntimeLab   on Github                                *
 #	*  RuntimeTranslate project on GitHub                    *
 #	----------------------------------------------------------
 #	*  Personal social links:                                *
