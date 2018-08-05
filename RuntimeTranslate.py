@@ -102,7 +102,7 @@ def RuntimeTranslate():
 	# Call the chosen dictionary
 	chosenDictionary()
 
-	# Call the shosen language
+	# Call the chosen language
 	chosenLanguage()
 	# Declaration of the Sheng to english dictionary
 	submissions = []
