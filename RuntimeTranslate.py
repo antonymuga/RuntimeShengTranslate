@@ -10,7 +10,7 @@
 #	*  Twitter: https://twitter.com/RuntimeLab               *
 #	*  Runtime Lab on LinkedIn                               *
 #	*  RuntimeLab on Github                                  *
-#	*  RuntimeTranslate project on GitHub                    *
+#	*  RuntimeShengTranslator project on GitHub                    *
 #	----------------------------------------------------------
 #	*  Personal social links:                                *
 #	*  GitHub: https://github.com/antonymuga/                *
@@ -79,7 +79,7 @@ def chosenDictionary():
 		activeDictionary = dictionaryList[4]
 	else:
 		print("""
-			Invalid input.RuntimeTranslate is exiting!
+			Invalid input.RuntimeShengTranslator is exiting!
 			""")
 		exit()
 	return activeDictionary
@@ -100,7 +100,7 @@ def chosenLanguage():
 
 
 # THE CORE LOGIC OF RUNTIME TRANSLATOR APP
-def RuntimeTranslate():
+def RuntimeShengTranslator():
 
 	# Call the chosen dictionary
 	chosenDictionary()
@@ -161,7 +161,7 @@ def RuntimeTranslate():
 
 				# If user selects yes, run the core logic again
 				if translateAnother == 1:
-					RuntimeTranslate()
+					RuntimeShengTranslator()
 
 				# If the user selects no, print the sign off details and exit app
 				elif translateAnother == 2:
@@ -187,7 +187,7 @@ def RuntimeTranslate():
 
 				# If the user selects yes, run core logic again
 				if translateAnother == 1:
-					RuntimeTranslate()
+					RuntimeShengTranslator()
 				# If the user selects no, print the sign off message and exit app
 				elif translateAnother == 2:
 					print(About.signOff)
@@ -205,7 +205,7 @@ def RuntimeTranslate():
 				print("\n","*"*75, "\n")
 				translateAnother = int(input("\n\t TRANSLATE ANOTHER SHENG WORD TO {}? \n\t \n\t 1: Yes \n\n\t 2: No \n\n\t Select: ".format(currentLang)))
 				if translateAnother == 1:
-					RuntimeTranslate()
+					RuntimeShengTranslator()
 				elif translateAnother == 2:
 					print(About.signOff)
 					exit()
@@ -219,15 +219,15 @@ def RuntimeTranslate():
 				print("\n","*"*75, "\n")
 				translateAnother = int(input("\n\t TRANSLATE ANOTHER SHENG WORD TO {}? \n\t \n\t 1: Yes \n\n\t 2: No \n\n\t Select: ".format(currentLang)))
 				if translateAnother == 1:
-					RuntimeTranslate()
+					RuntimeShengTranslator()
 				elif translateAnother == 2:
 					print(About.signOff)
 					exit()
 				else:
 					exit()
 
-# Calling the core logic of the RuntimeTranslate App
-RuntimeTranslate()
+# Calling the core logic of the RuntimeShengTranslator App
+RuntimeShengTranslator()
 
 
 
