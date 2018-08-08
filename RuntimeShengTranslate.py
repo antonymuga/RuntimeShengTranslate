@@ -20,7 +20,7 @@
 #	----------------------------------------------------------
 
 
-# The below 'import sys' is currently vestigial now but will come in handy while writing new submission
+# The below 'import sys' is currently vestigial now but will come in handy while writing new submissions
 # into the individual dictionary files, open, write, close and all that Jazz
 import sys
 
@@ -127,7 +127,7 @@ def RuntimeShengTranslator():
 	# testing for empty inputs, loop forever till the user actually enters meaningful input
 	while (len(shengWord) == 0) or (shengWord == "") or (shengWord == " ") or (shengWord.isspace()) == True:
 
-		# TODO: Instead of comming up with an print() error, why now raise an exception instead
+		# TODO: Instead of comming up with an print() error, why not raise an exception instead
 
 		print("\n\t Invalid input.Please enter a word to proceed! \n ")
 		print("\n","*"*75, "\n")
