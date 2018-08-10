@@ -20,7 +20,7 @@
 #	----------------------------------------------------------
 
 
-# The below 'import sys' is currently vestigial now but will come in handy while writing new submission
+# The below 'import sys' is currently vestigial now but will come in handy while writing new submissions
 # into the individual dictionary files, open, write, close and all that Jazz
 import sys
 
@@ -113,7 +113,7 @@ def RuntimeShengTranslator():
 	# Enter the search string, only one word is supported for now
 	shengWord = str(input("""
 	NOTE: Currently, only single words are supported.
-	More features will be added in through course of 
+	More features will be added in through the course of 
 	development.
 
 	PLEASE ENTER A SHENG WORD TO TRANSLATE.
@@ -123,15 +123,24 @@ def RuntimeShengTranslator():
 	# TO DO
 	# Write new logic to test for empty input, the one below is whack
 
-
+	# Number of times the user is going to enter an invalid input before the program exits
+	# Initialized to 1
+	trials = 0
 	# testing for empty inputs, loop forever till the user actually enters meaningful input
-	while (len(shengWord) == 0) or (shengWord == "") or (shengWord == " ") or (shengWord.isspace()) == True:
+	while ((len(shengWord) == 0) == True) or (shengWord.isspace()) == True:
 
-		# TODO: Instead of comming up with an print() error, why now raise an exception instead
+		# TODO: Instead of comming up with an print() error, why not raise an exception instead
 
-		print("\n\t Invalid input.Please enter a word to proceed! \n ")
+		# Print an invalid input error on the screen
+		print("\n\t Invalid input.Please enter a Sheng word to proceed! \n ")
 		print("\n","*"*75, "\n")
 		shengWord = str(input("\n\t PLEASE ENTER A SHENG WORD TO TRANSLATE.\n\n\t Your word: "))
+		# Increment the trials by 1
+		trials += 1
+		if trials >= 3:
+			print("\n\t RuntimeShengTranslator has exited after 3 failed attempts.\n")
+			print(About.signOff)
+			exit()
 
 
 	# If the input is not empty or a space
@@ -165,7 +174,9 @@ def RuntimeShengTranslator():
 
 				# If the user selects no, print the sign off details and exit app
 				elif translateAnother == 2:
+					print("\n","*"*75, "\n")
 					print(About.signOff)
+					print("\n","*"*75, "\n")
 					exit()
 				# Exit for invalid inputs
 				else:
@@ -190,7 +201,9 @@ def RuntimeShengTranslator():
 					RuntimeShengTranslator()
 				# If the user selects no, print the sign off message and exit app
 				elif translateAnother == 2:
+					print("\n","*"*75, "\n")
 					print(About.signOff)
+					print("\n","*"*75, "\n")
 					exit()
 				else:
 					exit()
@@ -207,7 +220,9 @@ def RuntimeShengTranslator():
 				if translateAnother == 1:
 					RuntimeShengTranslator()
 				elif translateAnother == 2:
+					print("\n","*"*75, "\n")
 					print(About.signOff)
+					print("\n","*"*75, "\n")
 					exit()
 				else:
 					exit()
@@ -221,7 +236,9 @@ def RuntimeShengTranslator():
 				if translateAnother == 1:
 					RuntimeShengTranslator()
 				elif translateAnother == 2:
+					print("\n","*"*75, "\n")
 					print(About.signOff)
+					print("\n","*"*75, "\n")
 					exit()
 				else:
 					exit()
