@@ -113,7 +113,7 @@ def RuntimeShengTranslator():
 	# Enter the search string, only one word is supported for now
 	shengWord = str(input("""
 	NOTE: Currently, only single words are supported.
-	More features will be added in through course of 
+	More features will be added in through the course of 
 	development.
 
 	PLEASE ENTER A SHENG WORD TO TRANSLATE.
@@ -125,11 +125,11 @@ def RuntimeShengTranslator():
 
 
 	# testing for empty inputs, loop forever till the user actually enters meaningful input
-	while (len(shengWord) == 0) or (shengWord == "") or (shengWord == " ") or (shengWord.isspace()) == True:
+	while ((len(shengWord) == 0) == True) or (shengWord.isspace()) == True:
 
 		# TODO: Instead of comming up with an print() error, why not raise an exception instead
 
-		print("\n\t Invalid input.Please enter a word to proceed! \n ")
+		print("\n\tInvalid input.Please enter a word to proceed! \n ")
 		print("\n","*"*75, "\n")
 		shengWord = str(input("\n\t PLEASE ENTER A SHENG WORD TO TRANSLATE.\n\n\t Your word: "))
 
