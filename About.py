@@ -44,22 +44,22 @@ projectDetails = """
 		"""
 
 signOff = """
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	THANK YOU FOR USING RUNTIME TRANSLATE v1.0.0
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	TWITTER: RuntimeLab
-	LINKEDIN: Runtime Lab
------------------------------------------------------------
-	GITHUB: RuntimeLab organization
-	FORK ON GITHUB & CONTRIBUTE: RuntimeTranslate
------------------------------------------------------------
-	AUTHOR: Antony Muga
-	GITHUB: https://github.com/antonymuga/ 
-	LINKEDIN: https://www.linkedin.com/in/antony-muga/
-	WEBSITE: https://antonymuga.github.io
-	EMAIL: https://sites.google.com/view/antonymuga/home
------------------------------------------------------------
-	Copyright(c) 2018, Antony Muga
-	https://antonymuga.github.io/
------------------------------------------------------------
+		+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+			THANK YOU FOR USING RUNTIME TRANSLATE v1.0.0
+		+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+			TWITTER: RuntimeLab
+			LINKEDIN: Runtime Lab
+		---------------------------------------------------------------
+			GITHUB: RuntimeLab organization
+			FORK ON GITHUB & CONTRIBUTE: RuntimeTranslate
+		---------------------------------------------------------------
+			AUTHOR: Antony Muga
+			GITHUB: https://github.com/antonymuga/ 
+			LINKEDIN: https://www.linkedin.com/in/antony-muga/
+			WEBSITE: https://antonymuga.github.io
+			EMAIL: https://sites.google.com/view/antonymuga/home
+		---------------------------------------------------------------
+			Copyright(c) 2018, Antony Muga
+			https://antonymuga.github.io/
+		---------------------------------------------------------------
 """
