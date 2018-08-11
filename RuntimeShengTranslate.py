@@ -25,7 +25,7 @@
 import sys
 
 # Import the project details
-import About
+import about
 
 # Import the dictionaries for the different languages
 from Dictionaries import ToEng # English dictionary
@@ -38,7 +38,7 @@ from Dictionaries import ToIta # Italian dictionary
 print("\n","*"*75, "\n")
 
 # Print the project details
-print(About.projectDetails)
+print(about.projectDetails)
 
 # Print line separator for different sections
 print("\n","*"*75, "\n")
@@ -46,6 +46,9 @@ print("\n","*"*75, "\n")
 
 # Declare a tuple that contains all the imported dictionaries
 dictionaryList = (ToEng.shengToEng, ToFre.shengToFre, ToGer.shengToGer, ToSpa.shengToSpa, ToIta.shengToIta)
+
+# Enter new word submissions
+submissions = []
 
 
 # Select language for translation
@@ -65,6 +68,7 @@ langSelect = int(input("""
 
 	Language: """))
 
+
 # Select the active dictionary that is to be used for translation
 def chosenDictionary():
 	if (langSelect == 0):
@@ -80,7 +84,7 @@ def chosenDictionary():
 	else:
 		print("""
 			Invalid input.RuntimeShengTranslator is exiting!
-			""")
+			{}""".format(about.signOff))
 		exit()
 	return activeDictionary
 
@@ -107,8 +111,6 @@ def RuntimeShengTranslator():
 
 	# Call the chosen language
 	chosenLanguage()
-	# Declaration dictionary that will store unavailable world for later translation
-	submissions = []
 
 	# Enter the search string, only one word is supported for now
 	shengWord = str(input("""
@@ -139,7 +141,7 @@ def RuntimeShengTranslator():
 		trials += 1
 		if trials >= 3:
 			print("\n\t RuntimeShengTranslator has exited after 3 failed attempts.\n")
-			print(About.signOff)
+			print(about.signOff)
 			exit()
 
 
@@ -175,7 +177,7 @@ def RuntimeShengTranslator():
 				# If the user selects no, print the sign off details and exit app
 				elif translateAnother == 2:
 					print("\n","*"*75, "\n")
-					print(About.signOff)
+					print(about.signOff)
 					print("\n","*"*75, "\n")
 					exit()
 				# Exit for invalid inputs
@@ -187,7 +189,6 @@ def RuntimeShengTranslator():
 				print("\n\t SORRY, NO MATCH WAS FOUND FOR '{}'.".format(shengWord))
 
 				# Append the new word to the submissions list
-				submissions = []
 				submissions.append(shengWord)
 
 				# Print line separator
@@ -202,7 +203,7 @@ def RuntimeShengTranslator():
 				# If the user selects no, print the sign off message and exit app
 				elif translateAnother == 2:
 					print("\n","*"*75, "\n")
-					print(About.signOff)
+					print(about.signOff)
 					print("\n","*"*75, "\n")
 					exit()
 				else:
@@ -221,7 +222,7 @@ def RuntimeShengTranslator():
 					RuntimeShengTranslator()
 				elif translateAnother == 2:
 					print("\n","*"*75, "\n")
-					print(About.signOff)
+					print(about.signOff)
 					print("\n","*"*75, "\n")
 					exit()
 				else:
@@ -229,7 +230,6 @@ def RuntimeShengTranslator():
 			elif (shengWord in chosenDictionary().keys()) == False:
 				print("\n\t CHOSEN LANGUAGE: {}\n".format(currentLang))
 				print("\n\t SORRY, NO MATCH WAS FOUND FOR'{}'.".format(shengWord))
-				submissions = []
 				submissions.append()
 				print("\n","*"*75, "\n")
 				translateAnother = int(input("\n\t TRANSLATE ANOTHER SHENG WORD TO {}? \n\t \n\t 1: Yes \n\n\t 2: No \n\n\t Select: ".format(currentLang)))
@@ -237,7 +237,7 @@ def RuntimeShengTranslator():
 					RuntimeShengTranslator()
 				elif translateAnother == 2:
 					print("\n","*"*75, "\n")
-					print(About.signOff)
+					print(about.signOff)
 					print("\n","*"*75, "\n")
 					exit()
 				else:
@@ -245,6 +245,3 @@ def RuntimeShengTranslator():
 
 # Calling the core logic of the RuntimeShengTranslator App
 RuntimeShengTranslator()
-
-
-
