@@ -16,7 +16,7 @@
 #	*  GitHub: https://github.com/antonymuga/                *
 #	*  Website: https://antonymuga.github.io                 *
 #	*  LinkedIn: https://www.linkedin.com/in/antony-muga/    *
-#	*  Email: https://sites.google.com/view/antonymuga/home  *
+#	*  Twitter: https://twitter.com/DevAntonyMuga            *
 #	----------------------------------------------------------
 
 projectDetails = """
@@ -39,7 +39,7 @@ projectDetails = """
 		*  GITHUB: https://github.com/antonymuga/                *
 		*  WEBSITE: https://antonymuga.github.io                 *
 		*  LINKEDIN: https://www.linkedin.com/in/antony-muga/    *
-		*  CONTACT: https://sites.google.com/view/antonymuga/home*
+		*  Twitter: https://twitter.com/DevAntonyMuga            *
 		----------------------------------------------------------
 		"""
 
@@ -48,7 +48,7 @@ signOff = """
 			THANK YOU FOR USING RUNTIME TRANSLATE v1.0.0
 		+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 			TWITTER: RuntimeLab
-			LINKEDIN: Runtime Lab
+			LINKEDIN: Runtime-Lab
 		---------------------------------------------------------------
 			GITHUB: RuntimeLab organization
 			FORK ON GITHUB & CONTRIBUTE: RuntimeTranslate
@@ -57,7 +57,7 @@ signOff = """
 			GITHUB: https://github.com/antonymuga/ 
 			LINKEDIN: https://www.linkedin.com/in/antony-muga/
 			WEBSITE: https://antonymuga.github.io
-			EMAIL: https://sites.google.com/view/antonymuga/home
+			TWITTER: https://twitter.com/DevAntonyMuga 
 		---------------------------------------------------------------
 			Copyright(c) 2018, Antony Muga
 			https://antonymuga.github.io/
