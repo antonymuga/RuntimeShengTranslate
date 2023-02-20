@@ -148,7 +148,7 @@ def RuntimeShengTranslator():
 	# If the input is not empty or a space
 	else:
 
-		# Declare the situational languge for translation
+		# Declare the situational language for translation
 		currentLang = chosenLanguage()
 
 		# CASE 1: Test to see whether the input is in Title case, if not, convert it to title case
