@@ -51,7 +51,7 @@ dictionaryList = (ToEng.shengToEng, ToFre.shengToFre, ToGer.shengToGer, ToSpa.sh
 submissions = []
 
 
-# Select language for translation
+# Select language for translation, type conversion to int
 langSelect = int(input("""
 
 	PLEASE SELECT THE LANGUAGE YOU WANT TO TRANSLATE SHENG TO:
