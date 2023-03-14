@@ -6,6 +6,15 @@
 - Follow [@RuntimeLab](https://twitter.com/RuntimeLab) on Twitter for more updates.
 - Follow [Runtime Lab](https://www.linkedin.com/company/runtime-lab) on LinkedIn for even more updates.
 
+## HOW IT WORKS
+This is a Python code for a Sheng translator that enables users to translate Sheng words into English, French, German, Spanish, and Italian.
+
+The code starts by importing some modules and dictionaries necessary for the project to run. It then defines two functions chosenDictionary and chosenLanguage, which select the active dictionary and language to be used for the translation process.
+
+After that, it defines the RuntimeShengTranslator function, which is the core logic of the program. This function prompts the user to select the language they want to translate to and then asks for a Sheng word to be translated. It then converts the Sheng word to title case if it is not already in title case and checks if the word exists in the chosen dictionary. If the word exists, it prints the translated word and asks the user if they want to translate another Sheng word in the same language. If the user selects yes, the function runs again.
+
+Finally, the program prompts the user to enter a Sheng word to be translated. If the input is empty or contains only spaces, the program will display an error message and prompt the user to enter a Sheng word again. If the user enters three invalid inputs in a row, the program will exit.
+
 ## MIT LICENSE:
 
 ### Copyright (c) 2018 [@RuntimeLab](https://github.com/RuntimeLab) & [@antonymuga](https://github.com/antonymuga).
